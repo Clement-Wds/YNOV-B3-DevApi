@@ -24,7 +24,7 @@ public class ProductControllerTest {
 		.andExpect(status().isOk())
 		.andExpect(jsonPath("$.name", is("clement")))
 		.andExpect(jsonPath("$.description", is("Description of the product")))
-		.andExpect(jsonPath("$.cost", is(Integer.valueOf(10))));	
+		.andExpect(jsonPath("$.cost", is(Integer.valueOf(10))));
 	}
 	
 }
